@@ -7,6 +7,9 @@ public class clickcontrol : MonoBehaviour {
 	public GameObject objnametext;
 	public Transform objnametextPos;
 	public Transform sucessclick;
+    public static int totalScore =0;
+    public static float timeBonus =90;
+    public static int remainItems = 7;
 
 
 	// Use this for initialization
@@ -26,6 +29,7 @@ public class clickcontrol : MonoBehaviour {
 		//Debug.Log (nameofobj);
 		Destroy (gameObject);
 		Destroy (objnametext);
+        remainItems -= 1;
 		trackingclicks.totalclicks = 0;
 		Instantiate (sucessclick, objnametextPos.position, sucessclick.rotation);
 	}
