@@ -19,7 +19,11 @@ public class clickcontrol : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
+	 if(remainItems == 0)
+        {
+
+		}
 	}
 
 	void OnMouseDown()
