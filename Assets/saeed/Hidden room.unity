@@ -2375,6 +2375,7 @@ GameObject:
   - component: {fileID: 1100947147}
   - component: {fileID: 1100947146}
   - component: {fileID: 1100947149}
+  - component: {fileID: 1100947150}
   m_Layer: 0
   m_Name: spaceship
   m_TagString: Untagged
@@ -2488,6 +2489,19 @@ MonoBehaviour:
   objnametextPos: {fileID: 1941353014}
   sucessclick: {fileID: 5009861386146819430, guid: cb984afec8bcfff4a822c6cbb6bd3fac,
     type: 3}
+--- !u!114 &1100947150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100947145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb3473afc70b4cbc81d0d2c6028f47c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenu: {fileID: 971598555}
 --- !u!1 &1347119182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3660,6 +3674,7 @@ GameObject:
   - component: {fileID: 1985478156}
   - component: {fileID: 1985478158}
   - component: {fileID: 1985478159}
+  - component: {fileID: 1985478160}
   m_Layer: 0
   m_Name: gem
   m_TagString: Untagged
@@ -3773,6 +3788,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5365247, y: 0.7472909}
   m_EdgeRadius: 0
+--- !u!114 &1985478160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985478155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb3473afc70b4cbc81d0d2c6028f47c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenu: {fileID: 971598555}
 --- !u!1 &1986654576
 GameObject:
   m_ObjectHideFlags: 0
@@ -3785,6 +3813,7 @@ GameObject:
   - component: {fileID: 1986654578}
   - component: {fileID: 1986654577}
   - component: {fileID: 1986654580}
+  - component: {fileID: 1986654581}
   m_Layer: 0
   m_Name: potion
   m_TagString: Untagged
@@ -3898,6 +3927,19 @@ MonoBehaviour:
   objnametextPos: {fileID: 1809484451}
   sucessclick: {fileID: 5009861386146819430, guid: cb984afec8bcfff4a822c6cbb6bd3fac,
     type: 3}
+--- !u!114 &1986654581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986654576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb3473afc70b4cbc81d0d2c6028f47c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenu: {fileID: 971598555}
 --- !u!1 &2100232720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3910,6 +3952,7 @@ GameObject:
   - component: {fileID: 2100232722}
   - component: {fileID: 2100232721}
   - component: {fileID: 2100232724}
+  - component: {fileID: 2100232725}
   m_Layer: 0
   m_Name: scythe
   m_TagString: Untagged
@@ -4023,6 +4066,19 @@ MonoBehaviour:
   objnametextPos: {fileID: 2126710093}
   sucessclick: {fileID: 5009861386146819430, guid: cb984afec8bcfff4a822c6cbb6bd3fac,
     type: 3}
+--- !u!114 &2100232725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100232720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb3473afc70b4cbc81d0d2c6028f47c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenu: {fileID: 971598555}
 --- !u!1 &2126710090
 GameObject:
   m_ObjectHideFlags: 0
