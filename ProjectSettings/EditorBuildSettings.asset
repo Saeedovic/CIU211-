@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Jonas/Scenes/Main Menu.unity
+    path: Assets/Final Game/Main Menu.unity
     guid: 6c38c20403f4b465f9e8bc0d565959b9
   - enabled: 1
-    path: Assets/saeed/Hidden room.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Final Game/Gamer Room.unity
+    guid: 0b475df8f27dfa94dbe0a5012d205d74
+  - enabled: 0
+    path: Assets/Final Game/Surfer's Bar.unity
+    guid: d253bc100b706e047b29cc11c634ed3d
   m_configObjects: {}

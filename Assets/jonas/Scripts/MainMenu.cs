@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Hidden room");
+        SceneManager.LoadScene("Gamer Room");
     }
 
     public void QuitGame()

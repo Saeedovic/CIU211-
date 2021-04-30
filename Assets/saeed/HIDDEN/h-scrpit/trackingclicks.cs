@@ -7,6 +7,7 @@ public class trackingclicks : MonoBehaviour {
 	public KeyCode mouseclick;
 
     public Transform scoreObj;
+    public GameObject Box;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +26,7 @@ public class trackingclicks : MonoBehaviour {
             clickcontrol.totalScore += (70 + (Mathf.RoundToInt(clickcontrol.timeBonus)));
             scoreObj.GetComponent<TextMesh>().text = "Score : " + clickcontrol.totalScore;
             clickcontrol.remainItems = -1;
+            Box.SetActive(true);
 
         }
 
