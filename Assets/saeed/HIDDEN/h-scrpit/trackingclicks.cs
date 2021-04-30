@@ -8,6 +8,7 @@ public class trackingclicks : MonoBehaviour {
 
     public Transform scoreObj;
     public GameObject Box;
+    public Transform ClicksRemaining;
 
 	// Use this for initialization
 	void Start () {
@@ -33,9 +34,10 @@ public class trackingclicks : MonoBehaviour {
 		if (Input.GetKeyDown (mouseclick))
 		{
 			totalclicks += 1;
+            ClicksRemaining.GetComponent<TextMesh>().text = "Clicks Remaining : " + totalclicks;
 
 
-		}
+        }
 
 		if (totalclicks >= 5) 
 		{
