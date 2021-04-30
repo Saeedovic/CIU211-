@@ -9,14 +9,21 @@ public class trackingclicks : MonoBehaviour {
     public Transform scoreObj;
     public GameObject Box;
     public Transform ClicksRemaining;
+    public int RemainingClicks;
+    public GameObject Lose;
+    public GameObject Music;
 
 	// Use this for initialization
 	void Start () {
+        RemainingClicks = 5;
+
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        ClicksRemaining.GetComponent<TextMesh>().text = "Clicks Remaining : " + RemainingClicks;
 
         clickcontrol.timeBonus -= Time.deltaTime;
 
@@ -34,7 +41,8 @@ public class trackingclicks : MonoBehaviour {
 		if (Input.GetKeyDown (mouseclick))
 		{
 			totalclicks += 1;
-            ClicksRemaining.GetComponent<TextMesh>().text = "Clicks Remaining : " + totalclicks;
+            RemainingClicks -= 1;
+            ClicksRemaining.GetComponent<TextMesh>().text = "Clicks Remaining : " + RemainingClicks;
 
 
         }
@@ -43,7 +51,12 @@ public class trackingclicks : MonoBehaviour {
 		{
 			Debug.Log ("FAIL!!!");
 			totalclicks = 0;
-		}
+            Lose.SetActive(true);
+            Time.timeScale = 0f;
+            Music.SetActive(false);
+            ClicksRemaining.GetComponent<TextMesh>().text = "Clicks Remaining : " + 0;
+
+        }
 	
 	}
 }

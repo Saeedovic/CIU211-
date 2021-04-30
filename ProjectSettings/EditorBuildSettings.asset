@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Final Game/Gamer Room.unity
     guid: 0b475df8f27dfa94dbe0a5012d205d74
-  - enabled: 0
+  - enabled: 1
     path: Assets/Final Game/Surfer's Bar.unity
     guid: d253bc100b706e047b29cc11c634ed3d
   m_configObjects: {}
