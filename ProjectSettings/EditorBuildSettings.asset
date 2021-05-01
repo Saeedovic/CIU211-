@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Final Game/Surfer's Bar.unity
     guid: d253bc100b706e047b29cc11c634ed3d
+  - enabled: 1
+    path: Assets/Final Game/Steampunk.unity
+    guid: f9d0631aabaf546f2b92f11fa0c677b2
   m_configObjects: {}

@@ -8,6 +8,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject PauseGame;
     public bool GamePaused;
     public string mainMenu;
+    public bool Level1;
+    public bool Level2;
+    public bool Level3;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,7 @@ public class PauseMenu : MonoBehaviour
             if (GamePaused)
             {
                 ResumeGame();
+
             }
 
             else
@@ -39,6 +43,37 @@ public class PauseMenu : MonoBehaviour
         GamePaused = false;
         PauseGame.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void ReloadScene()
+    {
+        if (Level1)
+        {
+            SceneManager.LoadScene("Surfer's Bar");
+        }
+
+        if (Level2)
+        {
+            SceneManager.LoadScene("Steampunk");
+        }
+    }
+
+    public void RetryGame()
+    {
+        if (Level1)
+        {
+            SceneManager.LoadScene("Gamer Room");
+        }
+
+        if (Level2)
+        {
+            SceneManager.LoadScene("Surfer's Bar");
+        }
+
+        if (Level3)
+        {
+            SceneManager.LoadScene("Steampunk");
+        }
     }
 
     public void LeaveGame()

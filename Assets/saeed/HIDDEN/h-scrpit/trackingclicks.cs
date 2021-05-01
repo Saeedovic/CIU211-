@@ -13,10 +13,24 @@ public class trackingclicks : MonoBehaviour {
     public GameObject Lose;
     public GameObject Music;
 
-	// Use this for initialization
-	void Start () {
-        RemainingClicks = 5;
+    public GameObject object1;
+    public GameObject object2;
+    public GameObject object3;
+    public GameObject object4;
+    public GameObject object5;
+    public GameObject object6;
+    public GameObject object7;
 
+    public GameObject PauseManager;
+
+    public GameObject YouWin;
+    public bool win;
+
+    // Use this for initialization
+    void Start () {
+        RemainingClicks = 5;
+        totalclicks = 0;
+        clickcontrol.remainItems = 7;
 	
 	}
 	
@@ -35,28 +49,66 @@ public class trackingclicks : MonoBehaviour {
             scoreObj.GetComponent<TextMesh>().text = "Score : " + clickcontrol.totalScore;
             clickcontrol.remainItems = -1;
             Box.SetActive(true);
+            YouWin.SetActive(true);
+            win = true;
 
         }
 
 		if (Input.GetKeyDown (mouseclick))
 		{
 			totalclicks += 1;
-            RemainingClicks -= 1;
             ClicksRemaining.GetComponent<TextMesh>().text = "Clicks Remaining : " + RemainingClicks;
 
-
+            if(win)
+            {
+                PauseManager.SetActive(false);
+                totalclicks = 0;
+            }
         }
 
-		if (totalclicks >= 5) 
+        if (totalclicks == 1)
+        {
+            RemainingClicks = 4;
+        }
+
+        if (totalclicks == 2)
+        {
+            RemainingClicks = 3;
+        }
+
+        if (totalclicks == 3)
+        {
+            RemainingClicks = 2;
+        }
+
+        if (totalclicks == 4)
+        {
+            RemainingClicks = 1;
+        }
+
+        if (totalclicks >= 5)
+        {
+            RemainingClicks = 0;
+        }
+
+        if (totalclicks >= 5) 
 		{
 			Debug.Log ("FAIL!!!");
-			totalclicks = 0;
             Lose.SetActive(true);
             Time.timeScale = 0f;
             Music.SetActive(false);
             ClicksRemaining.GetComponent<TextMesh>().text = "Clicks Remaining : " + 0;
+            PauseManager.SetActive(false);
 
+
+            object1.SetActive(false);
+            object2.SetActive(false);
+            object3.SetActive(false);
+            object4.SetActive(false);
+            object5.SetActive(false);
+            object6.SetActive(false);
+            object7.SetActive(false);
         }
-	
-	}
+
+    }
 }
